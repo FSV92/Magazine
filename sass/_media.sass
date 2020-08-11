@@ -1,0 +1,95 @@
+@media (max-width: 1200px)
+    .main-container
+        max-width: 960px
+    .compilation
+        padding: 18px
+        &__item
+            max-width: 220px
+            padding-right: 13px
+        &__text
+            font-size: 14px
+@media (max-width: 992px)
+    .main-container
+        max-width: 700px
+    .header
+        font-size: 12px
+        line-height: 15px
+        &-bottom
+            &__text
+                grid-column: 2 / 5
+            &__logo
+                width: 150px
+                grid-column: 6 / 8
+    .button
+        &__lines
+            margin-right: 10px
+        &__sections
+            font-size: 12px
+            line-height: 15px
+    .compilation
+        flex-wrap: wrap
+        &__item
+            max-width: 50%
+            &:nth-child(1)
+                margin-bottom: 20px
+                padding-right: 96px
+            &:nth-child(2)
+                border-right: none
+                padding-right: 0
+                margin-bottom: 20px
+            &:nth-child(3)
+                padding-right: 96px
+@media (max-width: 768px)
+    .main-container
+        max-width: 576px
+        width: 92%
+    .button
+        &__sections
+            display: none
+    .header
+        font-size: 11px
+        line-height: 14px
+        &-top
+            &__stories
+                display: none
+        &-bottom
+            &__logo
+                width: 140px
+            &__date
+                grid-column: 11 / 13
+                max-width: 90px
+    .compilation
+        &__text
+            font-size: 12px
+        &__item
+            &:nth-child(1)
+                padding-right: 34px
+            &:nth-child(3)
+                padding-right: 34px
+@media (max-width: 576px)
+    .header
+        &-bottom
+            &__freedom
+                display: none
+            &__text
+                display: none
+            &__date
+                grid-row: 1
+                grid-column: 1 / 4
+        &-subscribe
+            display: none
+    .compilation
+        &__text
+            font-size: 14px
+            min-width: 65%
+        &__item
+            min-width: 100%
+            border-right: none
+            &:nth-child(1)
+                padding-right: 0
+            &:nth-child(3)
+                padding-right: 0
+                margin-bottom: 20px
+                
+        
+
