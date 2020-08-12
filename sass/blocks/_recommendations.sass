@@ -7,25 +7,40 @@
         display: flex
         position: absolute
         top: -300px
-    &__iframe
+    &__overlay
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        z-index: 100
+        visibility: hidden
+        &--visible
+            visibility: visible
+    &__video
         display: none
+        top: -50%
         width: 100%
-        height: 100%
+        height: 92%
+        position: absolute
+        &--visible
+            display: block
+            z-index: 100
     &__list
         height: 570px
         display: flex
         flex-wrap: wrap
         list-style: none
-        padding: 20px 0
+        padding: 0
         background-color: $white    
-        border-radius: 0 10px 10px 0
+        border-radius: 0 10px 10px 0        
+        overflow: auto
 .content
     position: relative
     flex-shrink: 0
-    width: 877px
+    padding-left: 0
+    flex-basis: 77%
     height: 570px
-    padding: 55px 55px 95px 55px
-    background-image: url(../../img/recommendations/food.png)    
     border-radius: 10px 0 0 10px
     overflow: hidden
     &::after
@@ -40,12 +55,28 @@
         background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
     &__item
         display: none
+        width: 100%
+        height: 100%
+        padding: 55px 55px 95px 55px
+        left: 0
+        background-repeat: no-repeat
+        background-size: cover        
         &--visible            
             display: flex
             flex-wrap: wrap
             align-content: space-between
-            justify-content: space-between
             height: 100%
+        &--food            
+            background-image: url(../img/recommendations/food.png)
+        &--cars
+            background-image: url(../img/recommendations/cars.jpg)
+            background-position: right
+        &--movies
+            background-image: url(../img/recommendations/movies.jpg)
+        &--nfl
+            background-image: url(../img/recommendations/nfl.jpg)
+        &--tech
+            background-image: url(../img/recommendations/tech.jpg)
     &__author
         flex-basis: 100%
         display: flex
@@ -74,6 +105,7 @@
         color: $white     
         opacity: 0.4
     &__destinations
+        flex-basis: 100%
         align-self: center
         font-style: normal
         font-weight: bold
@@ -82,18 +114,22 @@
         letter-spacing: 0.5px
         text-transform: uppercase
         color: #4592FF
+        text-shadow: 2px 2px 3px #000000
         margin-bottom: 25px
         z-index: 1
     &__title
+        max-width: 600px
+        flex-basis: 100%
         font-family: Roboto Slab
         font-style: normal
         font-weight: bold
         font-size: 40px
         line-height: 50px
         color: $white
-        margin-bottom: 45px
+        margin: 0 0 25px 0
         z-index: 1
     &__more
+        flex-basis: 30%
         padding: 10px 20px 10px 25px
         max-width: 138px
         margin-right: 30px
@@ -109,12 +145,16 @@
         z-index: 1
     &__arrow
         margin-left: 6px
+    &__view-container
+        display: flex
+        z-index: 1
+    &__button
+        background: none
     &__play
         padding: 17px
         margin-right: 10px
         border-radius: 50%
         border: 2px solid rgba(255, 255, 255, 0.4)
-        z-index: 1
     &__location
         margin-right: auto
         align-self: center
@@ -143,10 +183,8 @@
         letter-spacing: 0.5px
         text-transform: uppercase
         color: $dark
-        padding-left: 25px
-        padding-bottom: 20px
+        padding: 20px 25px
         flex-basis: 100%
-        border-bottom: 1px solid #D9DADB
     &__item
         position: relative
         padding-left: 25px
@@ -154,16 +192,11 @@
         padding-top: 17px
         padding-bottom: 18px
         flex-basis: 100%
-        border-bottom: 1px solid #D9DADB
+        border-top: 1px solid #D9DADB
         cursor: pointer
         &--visible
-            background-color: #F5F5F5
-        &:checked>img
-            display: block
-            
-.item
-    &:last-child
-        border: none        
+            background-color: #F5F5F5            
+.item    
     &__title
         margin: 0
         margin-bottom: 8px

@@ -159,23 +159,31 @@
 
     <section class="recommendations">
       <div class="main-container recommendations__container">
+        <div class="recommendations__overlay"></div>
+        <!-- /.recommendations__overlay -->
         <iframe
           src="https://www.youtube.com/embed/4jbSsAjkryg"
           frameborder="0"
-          class="recommendations__iframe"
+          class="recommendations__video"
+          id="video-food"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></iframe>
+        >
+        </iframe>
         <iframe
           src="https://www.youtube.com/embed/b8eP3jFWLfQ"
           frameborder="0"
-          class="recommendations__iframe"
+          class="recommendations__video"
+          id="video-nfl"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
         <div class="recommendations__tabs">
           <ul class="content recommendations__content">
-            <li id="food" class="content__item content__item--visible">
+            <li
+              id="food"
+              class="content__item content__item--visible content__item--food"
+            >
               <div class="content__author">
                 <img
                   src="img/recommendations/avatar.png"
@@ -197,22 +205,31 @@
               <a href="#" class="content__more">
                 Read more
                 <img
-                  src="img/recommendations/Arrow.svg"
+                  src="img/recommendations/arrow.svg"
                   alt="Icon: arrow"
                   class="content__arrow"
               /></a>
-              <img
-                src="img/recommendations/content-play.svg"
-                alt="Icon: play"
-                class="content__play"
-              />
-              <div class="content__location">
-                The chalk cliff of Beachy Head
-                <span class="content__duration">18:05</span>
+              <div class="content__view-container">
+                <button
+                  data-toggle="modal"
+                  data-href="#video-food"
+                  class="button content__button"
+                >
+                  <img
+                    src="img/recommendations/content-play.svg"
+                    alt="Icon: play"
+                    class="content__play"
+                  />
+                </button>
+                <div class="content__location">
+                  The chalk cliff of Beachy Head
+                  <span class="content__duration">18:05</span>
+                </div>
+                <!-- /.location -->
               </div>
-              <!-- /.location -->
+              <!-- /.content__view-container -->
             </li>
-            <li id="cars" class="content__item">
+            <li id="cars" class="content__item content__item--cars">
               <div class="content__author">
                 <img
                   src="img/recommendations/avatar-2.jpg"
@@ -239,7 +256,7 @@
                   class="content__arrow"
               /></a>
             </li>
-            <li id="movies" class="content__item">
+            <li id="movies" class="content__item content__item--movies">
               <div class="content__author">
                 <img
                   src="img/recommendations/avatar-3.jpg"
@@ -266,7 +283,7 @@
                   class="content__arrow"
               /></a>
             </li>
-            <li id="nfl" class="content__item">
+            <li id="nfl" class="content__item content__item--nfl">
               <div class="content__author">
                 <img
                   src="img/recommendations/avatar-4.jpg"
@@ -292,18 +309,27 @@
                   alt="Icon: arrow"
                   class="content__arrow"
               /></a>
-              <img
-                src="img/recommendations/content-play.svg"
-                alt="Icon: play"
-                class="content__play"
-              />
-              <div class="content__location">
-                Lorem ipsum dolor sit amet.
-                <span class="content__duration">10:22</span>
+              <div class="content__view-container">
+                <button
+                  data-toggle="modal"
+                  data-href="#video-nfl"
+                  class="button content__button"
+                >
+                  <img
+                    src="img/recommendations/content-play.svg"
+                    alt="Icon: play"
+                    class="content__play"
+                  />
+                </button>
+                <div class="content__location">
+                  Lorem ipsum dolor sit amet.
+                  <span class="content__duration">10:22</span>
+                </div>
+                <!-- /.location -->
               </div>
-              <!-- /.location -->
+              <!-- /.content__view-container -->
             </li>
-            <li id="tech" class="content__item">
+            <li id="tech" class="content__item content__item--tech">
               <div class="content__author">
                 <img
                   src="img/recommendations/avatar-5.jpg"
