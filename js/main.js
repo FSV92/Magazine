@@ -37,4 +37,10 @@ $(document).ready(function () {
       recommendationsOverlay.removeClass("recommendations__overlay--visible");
     }
   });
+
+  // Флажок
+  var flag = $(".articles-categories__flag");
+  flag.on("click", function (evt) {
+    $(this).toggleClass("articles-categories__flag--select");
+  })
 });
