@@ -1,0 +1,121 @@
+.useful
+    background-color: $dark
+    &__container
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        height: 690px
+        padding: 60px 0
+    &__hot
+        position: relative
+        background-image: url(../img/useful/slide-1.png)
+        background-repeat: no-repeat
+        height: 570px
+        width: 555px
+        padding: 0 18px
+        display: flex
+        flex-wrap: wrap
+        align-content: space-between
+        justify-content: center
+        border-radius: 10px
+        &::after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    &-hot
+        &__label
+            position: absolute
+            top: 18px
+            left: 18px
+            padding: 5px 12px
+            background-color: #FF4F52
+            border-radius: 3px
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: $white
+            z-index: 1
+        &__author
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            max-width: 145px  
+            margin-top: 50px
+            z-index: 1
+        &__avatar
+            border-radius: 50%  
+            margin-bottom: 10px        
+        &__name
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: $white
+            opacity: 0.85
+            margin-bottom: 5px
+        &__profession
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: $white
+            opacity: 0.4
+        &__title
+            margin: 0
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 40px
+            line-height: 50px
+            text-align: center
+            color: $white
+            z-index: 1
+        &__watch
+            padding: 10px 25px 10px 20px
+            background: #4592FF
+            border-radius: 20px
+            vertical-align: center
+            text-decoration: none
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            color: $white
+            display: flex
+            align-items: center
+            margin-bottom: 165px
+            z-index: 1
+        &__image
+            margin-right: 10px
+        &__text
+            margin-right: 5px
+        &__number
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #C5E4FC
+        &__pagination
+            position: absolute
+            display: flex
+            justify-content: space-between
+            width: 108px
+            bottom: 40px
+            z-index: 1
+            &-path
+                width: 8px
+                height: 8px
+                background-color: #D9DADB
+                display: inline-block
+                border-radius: 50%
+                margin: 0 3px
+                outline: none
+
+        
