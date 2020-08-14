@@ -3,6 +3,7 @@
     &__container
         display: flex
         justify-content: space-between
+        align-items: flex-start
         padding: 60px 0
     &__categories
         padding: 0 25px
@@ -10,16 +11,20 @@
         overflow: hidden
         background-color: $white
         flex-basis: 848px
-.categories
-    &-card
-        position: relative
-        padding-top: 25px
-        padding-bottom: 25px                 
-        height: 245px
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        flex-direction: column
+        margin-right: 29px
+    &-categories
+        &__card
+            position: relative
+            padding-top: 25px
+            padding-bottom: 25px
+            height: 245px
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            flex-direction: column
+            border-bottom: 1px solid #BCBFC2
+            &:last-child
+                border: none
         &__image
             object-fit: cover
             margin-right: 25px    
@@ -46,7 +51,7 @@
         &__title
             margin-top: 0
             margin-bottom: 0
-            max-width: 390px
+            max-width: 426px
             font-family: Roboto Slab
             font-style: normal
             font-weight: bold
@@ -54,7 +59,7 @@
             line-height: 25px
             color: $dark
         &__text
-            max-width: 420px
+            max-width: 430px
             font-style: normal
             font-weight: normal
             font-size: 14px
@@ -87,5 +92,68 @@
             position: absolute
             right: 0
             top: 25
+    &__recommendation 
+        border-radius: 10px
+        overflow: hidden
+        background-color: $white
+        flex-basis: 263px
+        height: auto
+        display: flex
+        flex-direction: column
+    &-recommendation
+        &__title
+            margin: 0
+            padding: 20px 25px 20px 25px
+            border-bottom: 1px solid #D9DADB
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $dark
+            &-item    
+                max-width: 143px          
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 20px
+                color: #4B5157
+                height: 50%
+                margin: 0
+        &__items
+            margin: 0
+            list-style: none
+            padding: 0
+            border-bottom: 1px solid #D9DADB
+        &__item
+            display: flex
+            flex-direction: column
+            flex-wrap: wrap
+            justify-content: space-between
+            padding: 17px 0
+            margin: 0 25px
+            height: 94px
+            border-bottom: 1px solid #D9DADB
+            &:last-child
+                border: none
+        &__image
+            margin-right: 10px
+        &__time
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #939699
+        &__more
+            align-self: center
+            padding-top: 11px
+            padding-bottom: 14px
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            color: $dark
+            text-decoration: none
 
 
