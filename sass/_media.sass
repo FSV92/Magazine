@@ -86,7 +86,36 @@
             &__title-item    
     .flower
         padding-left: 150px
-        padding-right: 150px    
+        padding-right: 150px   
+    .articles
+        &-categories
+            &__card
+                height: 230px
+            &__image
+                width: 46%
+            &__title
+                font-size: 18px
+                line-height: 22px
+                max-width: 335px
+            &__text
+                font-size: 12px
+                line-height: 14px
+                max-width: 335px
+        &-recommendation
+            &__title
+                font-size: 12px
+                line-height: 14px
+                &-item
+                    font-size: 12px
+                    line-height: 14px
+            &__item
+                height: 85px
+                max-width: 113px
+            &__image
+                width: 50px
+            &__time
+                font-size: 11px
+                line-height: 13px
 @media (max-width: 992px)
     .main-container
         max-width: 700px
@@ -206,6 +235,34 @@
         &__title
             font-size: 32px
             line-height: 40px
+    .articles
+        &__container
+            flex-wrap: wrap
+        &__categories
+            margin-bottom: 30px
+            margin-right: 0
+        &__recommendation
+            flex-basis: 100%
+        &-categories
+            &__image
+                width: 47%
+            &__text
+                max-width: 320px
+        &-recommendation
+            &__item
+                max-width: 100%
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+            &__title
+                &-item
+                    max-width: 100%
+                    font-size: 24px
+                    line-height: 28px
+                    flex-basis: 87%
+            &__time
+                margin-left: auto
+
 @media (max-width: 768px)
     .main-container
         max-width: 576px
@@ -281,6 +338,10 @@
             &--7
                 grid-column: 2/3
                 grid-row: 6
+        &-item
+            &__title
+                &--other
+                    width: 100%
         &__columns
             grid-column: 1/3
             grid-row: 7
@@ -290,6 +351,27 @@
             &__title-item
                 font-size: 16px
                 line-height: 20px
+    .articles
+        &-categories
+            &__card
+                flex-direction: row
+            &__image
+                width: 20%
+                margin-right: 0
+                margin-bottom: 5px
+            &__category
+                margin-right: 30px
+            &__title
+                max-width: 100%
+            &__text
+                max-width: 100%
+            &__info
+                align-self: flex-end
+        &-recommendation
+            &__title
+                &-item
+                    font-size: 20px
+                    line-height: 24px
 @media (max-width: 576px)
     .header
         &-bottom
@@ -401,6 +483,26 @@
         &__title
             font-size: 26px
             line-height: 35px
-                
+    .articles
+        &-categories
+            &__card
+                height: 100%
+            &__image
+                width: 60%
+            &__title
+                margin-bottom: 5px
+            &__text
+                margin-bottom: 5px
+        &-recommendation
+            &__item
+                align-items: flex-start
+            &__title
+                &-item
+                    font-size: 16px
+                    line-height: 18px
+                    flex-basis: 74%
+            &__time
+                flex-basis: 30%
+                text-align: end
         
 
