@@ -59,5 +59,17 @@ $(document).ready(function () {
     keyboard: {
       enabled: true,
     }
-  })
+  });
+  //Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        email: {
+          required: "Email required",
+          email: "Format 'name@domain.com'",
+        },
+      },
+    });
+  });
 });
