@@ -1,0 +1,91 @@
+.articles
+    background-color: $grey
+    &__container
+        display: flex
+        justify-content: space-between
+        padding: 60px 0
+    &__categories
+        padding: 0 25px
+        border-radius: 10px
+        overflow: hidden
+        background-color: $white
+        flex-basis: 848px
+.categories
+    &-card
+        position: relative
+        padding-top: 25px
+        padding-bottom: 25px                 
+        height: 245px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        flex-direction: column
+        &__image
+            object-fit: cover
+            margin-right: 25px    
+            width: 336px
+        &__category
+            margin-top: 5px
+            margin-bottom: 0
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            &--flights
+                color: #4592FF
+            &--food
+                color: #3BBDC4
+            &--science
+                color: #FF4F52
+            &--health
+                color: #3BBDC4
+            &--art
+                color: #AC8EE3
+        &__title
+            margin-top: 0
+            margin-bottom: 0
+            max-width: 390px
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            color: $dark
+        &__text
+            max-width: 420px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+        &__info
+            display: flex
+            align-items: center
+            max-height: 15px
+            margin-bottom: 5px
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #939699
+        &__date
+            margin-right: 10px
+        &__comments
+            margin-right: 10px
+            display: flex
+            align-items: center
+        &__icon-comments
+            margin-right: 5px
+        &__likes
+            display: flex
+            align-items: center
+        &__icon-likes          
+            margin-right: 5px  
+        &__flag
+            position: absolute
+            right: 0
+            top: 25
+
+
