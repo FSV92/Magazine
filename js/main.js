@@ -43,4 +43,21 @@ $(document).ready(function () {
   flag.on("click", function (evt) {
     $(this).toggleClass("articles-categories__flag--select");
   })
+
+  // Слайдер 
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    keyboard: {
+      enabled: true,
+    }
+  })
 });
