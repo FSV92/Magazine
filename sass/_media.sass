@@ -116,6 +116,30 @@
             &__time
                 font-size: 11px
                 line-height: 13px
+    .swiper
+        &-container
+            width: 50%
+    .useful
+        &__careers
+            width: 47%
+        &-careers
+            &__title
+                font-size: 22px
+                line-height: 24px
+            &__text
+                font-size: 12px
+                line-height: 16px
+        &__others
+            width: 47%
+        &__other
+            width: 100%
+        &-other
+            &__title
+                font-size: 14px
+                line-height: 23px
+            &__text    
+                font-size: 12px
+                line-height: 16px
 @media (max-width: 992px)
     .main-container
         max-width: 700px
@@ -262,7 +286,33 @@
                     flex-basis: 87%
             &__time
                 margin-left: auto
-
+    .swiper
+        &-container
+            width: 100%
+            margin-right: 0
+            margin-bottom: 30px
+    .useful
+        &__container
+            flex-direction: row
+            height: 100%
+        &__careers
+            width: 100%
+        &-careers
+            &__title
+                font-size: 25px
+                line-height: 30px
+            &__text
+                font-size: 14px
+                line-height: 20px
+        &__others
+            min-width: 100%
+        &-other
+            &__title
+                font-size: 16px
+                line-height: 25px
+            &__text    
+                font-size: 14px
+                line-height: 20px
 @media (max-width: 768px)
     .main-container
         max-width: 576px
@@ -372,6 +422,25 @@
                 &-item
                     font-size: 20px
                     line-height: 24px
+    .useful    
+        &-hot
+            &__title
+                font-size: 32px
+                line-height: 38px
+        &-careers
+            &__title
+                font-size: 22px
+                line-height: 24px
+            &__text
+                font-size: 12px
+                line-height: 16px
+        &-other
+            &__title
+                font-size: 14px
+                line-height: 23px
+            &__text    
+                font-size: 12px
+                line-height: 16px
 @media (max-width: 576px)
     .header
         &-bottom
@@ -504,5 +573,41 @@
             &__time
                 flex-basis: 30%
                 text-align: end
+    .swiper
+        &-container
+            height: 80%
+    .useful
+        &-hot
+            &__author
+                margin-bottom: 30px
+            &__title
+                margin-bottom: 50px
+        &-careers
+            &__title
+                width: 100%
+            &__text
+                width: 100%
+            &__oval
+                right: 50%
+                transform: translateX(50%)
+            &__image
+                display: none
+        &__others
+            flex-wrap: wrap
+        &-other
+            margin-right: 0
+            padding-top: 15px
+            padding-bottom: 20px
+            &__title
+                font-size: 16px
+                line-height: 23px
+            &__text
+                font-size: 14px
+                line-height: 23px
+        &__other
+            &--1                
+                margin-bottom: 30px
+        
+
         
 
