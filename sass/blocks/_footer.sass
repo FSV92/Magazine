@@ -54,7 +54,6 @@
     &__navigation
         display: flex
         justify-content: space-between
-        padding-bottom: 64px 
     &-navigation
         &__title
             margin: 0
@@ -69,7 +68,8 @@
             padding-top: 35px
             border-top-width: 5px
             border-top-style: solid
-            &--new
+            padding-bottom: 64px
+            &--news
                 border-top-color: #FF4F52
             &--arts
                 border-top-color: #AC8EE3
@@ -103,10 +103,13 @@
         border-top: 1px solid #D9DADB
     &-info
         &__contacts
-            flex-basis: 50%
+            flex-basis: 51%
             display: flex
             align-items: center
             justify-content: space-between
+        &__logo
+            width: 50px
+            height: 50px
         &__link
             text-decoration: none
             font-style: normal
@@ -120,6 +123,9 @@
             width: 205px
             display: flex
             justify-content: space-between
+        &__social
+            width: 40px
+            height: 40px
     &__other       
         padding: 40px 0 55px 0 
         border-top: 1px solid #D9DADB
