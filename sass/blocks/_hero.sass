@@ -1,5 +1,8 @@
 .hero
     background-image: url(../img/hero/hero-1.png)
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
     &::after
         content: ''
         position: absolute
@@ -10,6 +13,15 @@
         bottom: 0
         left: 0
         background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+    &__flag
+        position: absolute
+        fill: #ffffff
+        fill-opacity: 0.25
+        width: 21px
+        height: 27px
+        top: 140px
+        left: 0
+        z-index: 1
     &__container
         display: flex
         flex-wrap: wrap
@@ -25,12 +37,14 @@
         color: #4592FF
         z-index: 1
     &__nav
-        flex-basis: 300px
         z-index: 1
+        display: flex
     &__home
         text-decoration: none
         height: 17px
         margin-right: 31px
+        display: flex
+        align-items: center
         &-icon
             width: 18px
             height: 17px
@@ -42,6 +56,8 @@
             line-height: 20px
             color: #FFFFFF
     &__prev
+        display: flex
+        align-items: center
         text-decoration: none
         margin-right: 20px
         &-icon
@@ -55,6 +71,8 @@
             line-height: 20px
             color: #FFFFFF
     &__next
+        display: flex
+        align-items: center
         text-decoration: none
         &-icon
             width: 15px
@@ -73,16 +91,86 @@
         font-size: 55px
         line-height: 70px
         color: #FFFFFF
+        flex-basis: 650px
+        z-index: 1
+    &__description
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 30px
+        color: #FFFFFF
+        opacity: 0.85
+        z-index: 1
+        flex-basis: 555px
+        margin-bottom: 60px
+    &__info
+        flex-basis: 100%
+        display: flex
+        align-items: center
+        z-index: 1
     &__time
+        display: flex
+        align-items: center
+        margin-right: 20px
         &-icon
             width: 13px
             height: 13px
+            margin-right: 5px
+        &-text
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #FFFFFF
+            mix-blend-mode: normal
+            opacity: 0.85
     &__likes
+        display: flex
+        align-items: center
+        margin-right: 20px
         &-icon
             width: 13px
             height: 12px
+            margin-right: 5px
+        &-text
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #FFFFFF
+            mix-blend-mode: normal
+            opacity: 0.85
     &__comments
+        display: flex
+        align-items: center
+        margin-right: 30px
         &-icon
             width: 13px
             height: 13px
+            margin-right: 5px
+        &-text
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+            color: #FFFFFF
+            mix-blend-mode: normal
+            opacity: 0.85
+    &__shares
+        padding: 10px 25px 10px 20px
+        border-width: 1px 
+        border-style: solid
+        border-color: rgba(255, 255, 255, 0.4)
+        border-radius: 20px
+        z-index: 1
+        &-icon
+            width: 18px
+            height: 11px 
+            margin-right: 5px
+        &-text
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            color: #FFFFFF
 

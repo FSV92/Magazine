@@ -145,6 +145,10 @@
             &__link
                 font-size: 13px
                 letter-spacing: 0.3
+    .article-container
+        max-width: 800px
+    .hero
+        background-position: 50%
 @media (max-width: 992px)
     .main-container
         max-width: 700px
@@ -340,6 +344,12 @@
             &__copyright
                 font-size: 12px
                 line-height: 16px
+    .article-container
+        max-width: 600px
+    .hero
+        &__title
+            font-size: 50px
+            line-height: 60px        
 @media (max-width: 768px)
     .main-container
         max-width: 576px
@@ -491,6 +501,15 @@
                 margin-bottom: 20px   
             &__copyright
                 margin-left: auto
+    .article-container
+        max-width: 500px
+        width: 90%
+    .hero
+        &__title
+            font-size: 40px
+            line-height: 50px    
+        &__flag
+            top: 125px
 @media (max-width: 576px)
     .header
         &-bottom
@@ -684,6 +703,28 @@
                 flex-wrap: wrap
             &__social
                 flex-basis: 50%
+    .hero
+        &__nav
+            order: -1
+            flex-basis: 100%
+            justify-content: space-between
+            margin-bottom: 20px
+        &__title
+            font-size: 24px
+            line-height: 34px
+        &__description
+            font-size: 14px
+            line-height: 26px
+        &__info
+            flex-wrap: wrap
+            justify-content: space-between
+        &__comments
+            margin-right: 0
+        &__shares
+            margin-top: 20px
+            margin-left: auto
+            margin-right: auto
+
 
         
 
