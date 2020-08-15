@@ -52,7 +52,92 @@
         bottom: -14px
         left: 0
     &__navigation
-        border: 1px solid red
         display: flex
         justify-content: space-between
+        padding-bottom: 64px 
+    &-navigation
+        &__title
+            margin: 0
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            color: $dark
+            margin-bottom: 25px
+        &__column
+            flex-grow: 1
+            padding-top: 35px
+            border-top-width: 5px
+            border-top-style: solid
+            &--new
+                border-top-color: #FF4F52
+            &--arts
+                border-top-color: #AC8EE3
+            &--travel
+                border-top-color: #4592FF
+            &--sports
+                border-top-color: #FFA34D
+            &--tech
+                border-top-color: #3DC47E
+            &--moneys
+                border-top-color: #6E99AE
+        &__list
+            list-style: none
+            padding-left: 0
+            margin: 0
+        &__item
+            margin-bottom: 15px
+            &:last-child
+                margin-bottom: 0
+        &__link
+            text-decoration: none
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #4B5157
+    &__info
+        display: flex
+        justify-content: space-between
+        padding: 30px 0
+        border-top: 1px solid #D9DADB
+    &-info
+        &__contacts
+            flex-basis: 50%
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__link
+            text-decoration: none
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $dark
+        &__socials
+            width: 205px
+            display: flex
+            justify-content: space-between
+    &__other       
+        padding: 40px 0 55px 0 
+        border-top: 1px solid #D9DADB
+        display: flex
+        justify-content: space-between
+    &-other
+        &__text
+            max-width: 750px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #939699
+        &__copyright
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            color: #939699
+
 
