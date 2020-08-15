@@ -12,7 +12,13 @@
         font-weight: bold
         font-size: 40px
         line-height: 50px
+    &__form
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
     &__input
+        position: relative
         font-style: normal
         font-weight: normal
         font-size: 14px
@@ -23,7 +29,11 @@
         border-color: #D9DADB
         border-style: solid
         padding: 10px 15px
-        width: 313px
+        width: 100%
+        &-group
+            position: relative
+            width: 313px
+            margin-right: 10px
     &__button
         font-style: normal
         font-weight: bold
@@ -33,3 +43,10 @@
         padding: 10px 29px
         background-color: #4592FF
         border-radius: 20px
+        min-height: 40px
+label
+    color: #ff0000
+    font-size: 12px
+    position: absolute
+    bottom: -14px
+    left: 0
