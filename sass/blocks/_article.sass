@@ -5,7 +5,7 @@
         position: absolute
         right: 0
         top: -100px
-        max-width: 263px
+        width: 263px
         border: 1px solid #D9DADB
         border-radius: 10px
         display: flex
@@ -94,12 +94,13 @@
             color: $dark
     &-swiper
         position: relative
-        border-radius: 10px
-        border: 1px solid #D9DADB
     &-slider
         &__slide
             display: flex
             flex-wrap: wrap
+            border-radius: 10px
+            overflow: hidden
+            border: 1px solid #D9DADB
         &__image
             object-fit: cover
             height: 555px
@@ -115,7 +116,8 @@
             font-size: 14px
             line-height: 20px
             color: #4B5157
-            margin-left: 35px
+            padding-left: 35px
+            padding-right: 35px
         &__author
             padding: 12px 35px 12px 30px
             height: 100%
@@ -128,6 +130,7 @@
         &__avatar
             border-radius: 50%
             width: 40px
+            height: 40px
             margin-right: 10px
         &__name
             height: 50%
@@ -190,6 +193,8 @@
         &__avatar
             border-radius: 50%
             margin-bottom: 10px
+            width: 60px
+            height: 60px
         &__name
             font-style: normal
             font-weight: normal
@@ -292,9 +297,11 @@
             line-height: 25px
             color: $dark
             margin-bottom: 20px
+            margin-top: 0
         &__image
             border-radius: 10px
             margin-bottom: 15px
+            width: 100%
         &__title
             font-family: Roboto Slab
             font-style: normal
@@ -303,6 +310,7 @@
             line-height: 25px
             color: $dark
             margin-bottom: 5px
+            margin-top: 0
         &__text
             font-style: normal
             font-weight: normal
@@ -321,6 +329,12 @@
                 height: 15px
                 fill: #BCBFC2
                 margin-right: 5px
+            &-text
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #939699
         &__comments
             display: flex
             align-items: center
@@ -329,5 +343,11 @@
                 height: 15px
                 fill: #BCBFC2
                 margin-right: 5px
+            &-text
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+                color: #939699
 
 

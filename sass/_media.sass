@@ -148,6 +148,12 @@
         max-width: 800px
     .hero
         background-position: 50%
+    .article
+        &__text
+            max-width: 515px
+        &-saying
+            &__text
+                max-width: 355px
 @media (max-width: 992px)
     .main-container
         max-width: 700px
@@ -347,7 +353,33 @@
     .hero
         &__title
             font-size: 50px
-            line-height: 60px        
+            line-height: 60px   
+    .article
+        &__author
+            position: relative   
+            float: right  
+            top: -45px
+        &-author
+            &__card
+                padding: 25px 30px
+        &-text
+            &__paragraph
+                font-size: 16px
+                line-height: 25px
+        &-slider
+            &__text
+            &__name
+                font-size: 12px
+                line-height: 14px
+            &__profession
+                font-size: 10px
+                line-height: 20px
+        &-theme
+            position: relative
+            float: right            
+            border: 1px solid #D9DADB
+            border-radius: 10px
+            padding: 10px
 @media (max-width: 768px)
     .main-container
         max-width: 576px
@@ -508,6 +540,56 @@
             line-height: 50px    
         &__flag
             top: 125px
+    .article
+        &-text
+            &__paragraph
+                font-size: 12px
+                line-height: 20px
+                &--1
+                    &:first-letter
+                        font-size: 60px
+                        line-height: 80px
+            &__title
+                font-size: 24px
+        &-author
+            &__name
+                font-size: 18px
+                line-height: 22px
+            &__profession
+                font-size: 12px
+                line-height: 18px
+            &__articles                
+                font-size: 12px
+                line-height: 18px
+            &__follow
+                font-size: 12px
+                line-height: 18px
+        &-slider
+            &__image
+                background-position: right
+            &__text
+                font-size: 12px
+                line-height: 18px
+        &-theme
+            &__title-card
+                font-size: 18px
+                line-height: 22px
+            &__title
+                font-size: 14px
+                line-height: 22px
+            &__text
+                font-size: 12px
+                line-height: 18px
+        &-saying
+            &__text
+                font-size: 22px
+                line-height: 28px
+            &__name
+                font-size: 16px
+                line-height: 22px
+            &__profession
+                font-size: 12px
+                line-height: 18px
 @media (max-width: 576px)
     .header
         &-bottom
@@ -721,7 +803,53 @@
             margin-top: 20px
             margin-left: auto
             margin-right: auto
-
+    .article
+        &__author
+            width: 100%
+        &-author
+            &__card
+                width: 100%
+        &-slider
+            &__info
+                flex-wrap: wrap
+            &__text
+                padding: 12px 20px           
+                border-bottom: 1px solid #D9DADB
+            &__author
+                border: none
+                height: auto                
+                padding-left: 20px
+            &__button
+                display: none
+        &__theme
+            max-width: 100%
+            margin: 0
+            margin-bottom: 30px
+        &-saying
+            flex-wrap: wrap
+            &__author
+                flex-wrap: wrap
+                justify-content: center
+                position: relative
+                order: -1
+                height: 60px
+            &__avatar
+                margin-right: 10px
+            &__name
+                width: 100%
+            &__profession
+        &__tags
+            display: flex
+            flex-wrap: wrap
+            padding-bottom: 50px
+        &__tag
+            margin-bottom: 10px
+        &-support
+            justify-content: center
+            &__link
+                margin-bottom: 10px
+                flex-basis: 100%
+                justify-content: center
 
         
 
