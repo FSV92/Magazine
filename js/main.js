@@ -61,19 +61,6 @@ $(document).ready(function () {
     }
   });
 
-  var heroSlider = new Swiper('.hero-swiper', {
-    // Optional parameters
-    loop: true,
-    // Navigation arrows
-    navigation: {
-      nextEl: ".hero__button--next",
-      prevEl: ".hero__button--prev",
-    },
-    keyboard: {
-      enabled: true,
-    }
-  });
-
   var articleSlider = new Swiper('.article-swiper', {
     // Optional parameters
     loop: true,

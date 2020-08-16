@@ -154,6 +154,14 @@
         &-saying
             &__text
                 max-width: 355px
+    .more-articles
+        &__container
+            padding-bottom: 60px
+        &__item
+            margin: 0 auto
+            &-wrapper
+                flex-basis: 50%
+                margin-bottom: 30px
 @media (max-width: 992px)
     .main-container
         max-width: 700px
@@ -590,6 +598,9 @@
             &__profession
                 font-size: 12px
                 line-height: 18px
+    .more-articles
+        &__item
+            max-width: 90%
 @media (max-width: 576px)
     .header
         &-bottom
@@ -600,6 +611,8 @@
             &__date
                 grid-row: 1
                 grid-column: 1 / 4
+            &__logo
+                grid-column: 4 / 8
         &-subscribe
             display: none
     .compilation
@@ -783,11 +796,18 @@
             &__social
                 flex-basis: 50%
     .hero
+        &__destinations
+            flex-basis: 100%
         &__nav
-            top: 20px
-            width: 100%
+            order: -1
             justify-content: space-between
             margin-bottom: 20px
+            width: 100%
+        &__home
+            margin-right: 0
+        &__button
+            &--prev
+                margin-right: 0
         &__title
             font-size: 24px
             line-height: 34px
@@ -797,6 +817,7 @@
         &__info
             flex-wrap: wrap
             justify-content: space-between
+            align-items: baseline
         &__comments
             margin-right: 0
         &__shares
@@ -850,6 +871,11 @@
                 margin-bottom: 10px
                 flex-basis: 100%
                 justify-content: center
+    .more-articles
+        &__item
+            max-width: 100%
+            &-wrapper
+                flex-basis: 100%
 
         
 
