@@ -44,8 +44,8 @@ $(document).ready(function () {
     $(this).toggleClass("articles-categories__flag--select");
   })
 
-  // Слайдер 
-  var mySwiper = new Swiper('.swiper-container', {
+  // Слайдеры
+  var usefulSlider = new Swiper('.useful-swiper', {
     // Optional parameters
     loop: true,
     //autoplay: {
@@ -60,6 +60,33 @@ $(document).ready(function () {
       enabled: true,
     }
   });
+
+  var heroSlider = new Swiper('.hero-swiper', {
+    // Optional parameters
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".hero__next",
+      prevEl: ".hero__prev",
+    },
+    keyboard: {
+      enabled: true,
+    }
+  });
+
+  var articleSlider = new Swiper('.article-swiper', {
+    // Optional parameters
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".article-slider__button--next",
+      prevEl: ".article-slider__button--prev",
+    },
+    keyboard: {
+      enabled: true,
+    }
+  });
+
   //Обработка форм
   $(".form").each(function () {
     $(this).validate({
