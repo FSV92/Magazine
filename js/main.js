@@ -66,8 +66,8 @@ $(document).ready(function () {
     loop: true,
     // Navigation arrows
     navigation: {
-      nextEl: ".hero__next",
-      prevEl: ".hero__prev",
+      nextEl: ".hero__button--next",
+      prevEl: ".hero__button--prev",
     },
     keyboard: {
       enabled: true,

@@ -104,7 +104,7 @@
       <!-- /.header__nav -->
     </header>
 
-    <div class="swiper-container hero-slider">
+    <div class="article-container">
       <nav class="hero__nav">
         <a href="#" class="hero__home">
           <svg class="hero__home-icon">
@@ -112,22 +112,25 @@
           </svg>
           <span class="hero__home-text">Back to main</span>
         </a>
-        <button class="hero__prev">
-          <svg class="hero__prev-icon">
+        <button class="hero-button hero__button hero__button--prev">
+          <svg class="hero-button__icon hero-button__icon--prev">
             <use xlink:href="img/sprite.svg#arrow-prev"></use>
           </svg>
-          <span class="hero__prev-text">Prev</span>
+          <span class="hero-button__text hero-button__text--prev">Prev</span>
         </button>
-        <button class="hero__next">
-          <span class="hero__next-text">Next</span>
-          <svg class="hero__next-icon">
+        <button class="hero-button hero__button hero__button--next">
+          <span class="hero-button__text hero-button__text--next">Next</span>
+          <svg class="hero-button__icon hero-button__icon--next">
             <use xlink:href="img/sprite.svg#arrow-next"></use>
           </svg>
         </button>
       </nav>
+    </div>
+    <!-- /.article-container -->
+    <div class="swiper-container hero-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <section class="hero">
+          <section class="hero hero-1">
             <div class="main-container">
               <svg class="hero__flag">
                 <use xlink:href="img/sprite.svg#flag"></use>
@@ -519,33 +522,13 @@
         </div>
 
         <div class="swiper-slide">
-          <section class="hero">
+          <section class="hero hero-2">
             <div class="main-container">
               <svg class="hero__flag">
                 <use xlink:href="img/sprite.svg#flag"></use>
               </svg>
               <div class="article-container hero__container">
                 <span class="hero__destinations">Destinations</span>
-                <nav class="hero__nav">
-                  <a href="#" class="hero__home">
-                    <svg class="hero__home-icon">
-                      <use xlink:href="img/sprite.svg#home"></use>
-                    </svg>
-                    <span class="hero__home-text">Back to main</span>
-                  </a>
-                  <a href="#" class="hero__prev">
-                    <svg class="hero__prev-icon">
-                      <use xlink:href="img/sprite.svg#arrow-prev"></use>
-                    </svg>
-                    <span class="hero__prev-text">Prev</span>
-                  </a>
-                  <a href="#" class="hero__next">
-                    <span class="hero__next-text">Next</span>
-                    <svg class="hero__next-icon">
-                      <use xlink:href="img/sprite.svg#arrow-next"></use>
-                    </svg>
-                  </a>
-                </nav>
                 <h1 class="hero__title">
                   Five Travel Stories From 2017 to Help You Escape Into the
                   World

@@ -1,8 +1,11 @@
 .hero
     position: relative
-    background-image: url(../img/hero/hero-1.png)
     background-repeat: no-repeat
     background-size: cover
+    &-1
+        background-image: url(../img/hero/hero-1.png)
+    &-2
+        background-image: url(../img/hero/hero-2.jpg)
     &::after
         content: ''
         position: absolute
@@ -37,8 +40,11 @@
         color: #4592FF
         z-index: 1
     &__nav
-        z-index: 1
+        z-index: 10
         display: flex
+        position: absolute
+        top: 60px
+        right: 0
     &__home
         text-decoration: none
         height: 17px
@@ -55,35 +61,31 @@
             font-size: 14px
             line-height: 20px
             color: #FFFFFF
-    &__prev
+    &__button
+        &--prev
+            margin-right: 20px
+    &-button
+        width: 66px
+        background-color: transparent
         display: flex
         align-items: center
         text-decoration: none
-        margin-right: 20px
-        &-icon
+        &__icon
             width: 15px
             height: 7px
-            margin-right: 5px
-        &-text
+            display: flex
+            align-items: center
+            text-decoration: none
+            &--prev
+                margin-right: 5px
+        &__text
             font-style: normal
             font-weight: bold
             font-size: 14px
             line-height: 20px
             color: #FFFFFF
-    &__next
-        display: flex
-        align-items: center
-        text-decoration: none
-        &-icon
-            width: 15px
-            height: 7px
-        &-text
-            margin-right: 5px
-            font-style: normal
-            font-weight: bold
-            font-size: 14px
-            line-height: 20px
-            color: #FFFFFF
+            &--next
+                margin-right: 5px
     &__title
         font-family: Roboto Slab
         font-style: normal
@@ -91,7 +93,6 @@
         font-size: 55px
         line-height: 70px
         color: #FFFFFF
-        flex-basis: 650px
         z-index: 1
     &__description
         font-style: normal
@@ -101,7 +102,6 @@
         color: #FFFFFF
         opacity: 0.85
         z-index: 1
-        flex-basis: 555px
         margin-bottom: 60px
     &__info
         flex-basis: 100%
