@@ -658,7 +658,7 @@
           />
           <div class="comments__message">
             <span class="comments__name">Ryan Hall</span>
-            <span class="time">July 17, 6:38 pm</span>
+            <span class="comments__time">July 17, 6:38 pm</span>
             <div class="comments__text">
               In the event, "in places like Iraq and Jordan, leaders of the new
               sovereign states were brought in from the outside, tailored
@@ -679,7 +679,7 @@
                 <svg class="comments-info__icon comments-info__icon--thumb-up">
                   <use xlink:href="img/sprite.svg#thumb-up"></use>
                 </svg>
-                <span class="comments-info__text comments-info__text--thumb-up"
+                <span class="comments-info__text comments-info__text--hall"
                   >+10</span
                 >
                 <svg
@@ -704,11 +704,11 @@
           />
           <div class="comments__message">
             <span class="comments__name">Lora Morrow</span>
-            <span class="time">July 17, 6:41 pm</span>
+            <span class="comments__time">July 17, 6:41 pm</span>
             <div class="comments__text">
               Likewise, most states in the Persian Gulf were handed over to
-              those who could protect and safeguard imperial interests in the
-              post-withdrawal phase
+              those who&nbsp;could protect and safeguard imperial interests in
+              the post-&nbsp;withdrawal&nbsp;phase
             </div>
             <!-- /.comments__text -->
             <div class="comments-info comments__info">
@@ -725,8 +725,8 @@
                 <svg class="comments-info__icon comments-info__icon--thumb-up">
                   <use xlink:href="img/sprite.svg#thumb-up"></use>
                 </svg>
-                <span class="comments-info__text comments-info__text--thumb-up"
-                  >+10</span
+                <span class="comments-info__text comments-info__text--morrow"
+                  >0</span
                 >
                 <svg
                   class="comments-info__icon comments-info__icon--thumb-down"
@@ -750,7 +750,7 @@
           />
           <div class="comments__message">
             <span class="comments__name">Tara Stark</span>
-            <span class="time">July 17, 6:53 pm</span>
+            <span class="comments__time">July 17, 6:53 pm</span>
             <div class="comments__text">
               French Indochina was divided into five subdivisions: Tonkin,
               Annam, Cochinchina, Cambodia and Laos. Cochinchina was the first
@@ -772,8 +772,8 @@
                 <svg class="comments-info__icon comments-info__icon--thumb-up">
                   <use xlink:href="img/sprite.svg#thumb-up"></use>
                 </svg>
-                <span class="comments-info__text comments-info__text--thumb-up"
-                  >+10</span
+                <span class="comments-info__text comments-info__text--stark"
+                  >-3</span
                 >
                 <svg
                   class="comments-info__icon comments-info__icon--thumb-down"
@@ -791,17 +791,17 @@
 
         <div class="comments__comment">
           <img
-            src="img/comments/hall.png"
-            alt="Avatar: Hall"
+            src="img/comments/robertson.png"
+            alt="Avatar: Robertson"
             class="comments__avatar"
           />
           <div class="comments__message">
-            <span class="comments__name">Ryan Hall</span>
-            <span class="time">July 17, 6:38 pm</span>
+            <span class="comments__name">Kris Robertson</span>
+            <span class="comments__time">July 17, 7:12 pm</span>
             <div class="comments__text">
-              In the event, "in places like Iraq and Jordan, leaders of the new
-              sovereign states were brought in from the outside, tailored
-              to suit colonial interests and commitments
+              Indian Marxist scholar Vivek Chibber has critiqued some
+              foundational logics of Postcolonial Theory in his book
+              Postcolonial Theory and the Specter of Capital
             </div>
             <!-- /.comments__text -->
             <div class="comments-info comments__info">
@@ -818,8 +818,8 @@
                 <svg class="comments-info__icon comments-info__icon--thumb-up">
                   <use xlink:href="img/sprite.svg#thumb-up"></use>
                 </svg>
-                <span class="comments-info__text comments-info__text--thumb-up"
-                  >+10</span
+                <span class="comments-info__text comments-info__text--robertson"
+                  >0</span
                 >
                 <svg
                   class="comments-info__icon comments-info__icon--thumb-down"
@@ -835,36 +835,31 @@
         </div>
         <!-- /.comments__comment -->
 
-        <button class="comments__button-load">
-          <svg class="comments__load">
+        <button class="comments__load-button">
+          <svg class="comments__load-icon">
             <use xlink:href="img/sprite.svg#load"></use>
           </svg>
           <span class="comments__more">Load more</span>
         </button>
 
-        <div class="comments-form-wrap comments__form-wrap">
+        <div class="comments-my comments__my">
+          <h3 class="comments-my__title">What do you think?</h3>
           <img
             src="img/comments/avatar.png"
             alt="Avatar: me"
-            class="comments-form-wrap__avatar"
+            class="comments-my__avatar"
           />
-          <h3 class="comments-form-wrap__title">What do you think?</h3>
-          <form action="send.php" class="comments__form">
-            <textarea
-              class="comments__textarea"
-              name="comment"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <button class="comments__button-submit" type="submit">
-              <span class="comments__submit">Submit</span>
-              <svg class="comments__arrow">
+          <form action="send.php" class="comments-my__form">
+            <textarea class="comments-my__message" name="comment"></textarea>
+            <button class="comments-my__button" type="submit">
+              <span class="comments-my__submit">Submit</span>
+              <svg class="comments-my__arrow">
                 <use xlink:href="img/sprite.svg#arrow-next"></use>
               </svg>
             </button>
           </form>
         </div>
-        <!-- /.acomments-form-wrap comments__form-wrap -->
+        <!-- /.comments-my comments__my -->
       </div>
       <!-- /.article-container -->
     </secion>
