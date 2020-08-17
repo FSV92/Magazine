@@ -14,6 +14,7 @@
         margin-right: 29px
     &-categories
         &__card
+            text-decoration: none
             position: relative
             padding-top: 25px
             padding-bottom: 25px
@@ -58,6 +59,7 @@
             font-size: 20px
             line-height: 25px
             color: $dark
+            text-decoration: none
         &__text
             max-width: 430px
             font-style: normal
@@ -133,6 +135,7 @@
             padding: 0
             border-bottom: 1px solid #D9DADB
         &__item
+            position: relative
             display: flex
             flex-direction: column
             flex-wrap: wrap
@@ -143,6 +146,37 @@
             border-bottom: 1px solid #D9DADB
             &:last-child
                 border: none
+            &::before
+                position: absolute
+                right: 0
+                top: 20px
+                font-style: normal
+                font-weight: normal
+                font-size: 70px
+                line-height: 50px
+                color: $dark
+                opacity: 0.08
+            &--1
+                &::before
+                    content: '1'
+            &--2
+                &::before
+                    content: '2'
+            &--3
+                &::before
+                    content: '3'
+            &--4
+                &::before
+                    content: '4'
+            &--5
+                &::before
+                    content: '5'
+            &--6
+                &::before
+                    content: '6'
+            &--7
+                &::before
+                    content: '7'             
         &__image
             margin-right: 10px
         &__time

@@ -63,9 +63,9 @@ $(document).ready(function () {
   var usefulSlider = new Swiper('.useful-swiper', {
     // Optional parameters
     loop: true,
-    //autoplay: {
-    //delay: 3000,
-    //},
+    autoplay: {
+      delay: 1500,
+    },
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
