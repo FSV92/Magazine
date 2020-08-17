@@ -5,7 +5,7 @@
         padding-bottom: 30px
         display: flex
         justify-content: space-between
-        align-items: flex-end
+        align-items: baseline
     &__title
         font-family: Roboto Slab
         font-style: normal
@@ -14,7 +14,7 @@
         line-height: 50px
         color: $dark
         margin: 0
-        margin-bottom: 10px
+        margin-right: 10px
     &__number
         font-style: normal
         font-weight: normal
@@ -51,10 +51,17 @@
         height: 75px
         border-radius: 50%
         margin-right: 15px
+        &--hidden
+            display: none
     &__message
         display: flex
         flex-wrap: wrap
         align-items: baseline
+    &__name-time
+        display: flex
+        align-items: baseline
+        flex-basis: 65%
+        margin-bottom: 10px
     &__name
         font-family: Roboto Slab
         font-style: normal
@@ -62,7 +69,6 @@
         font-size: 16px
         line-height: 25px
         color: $dark
-        margin-bottom: 10px
         margin-right: 10px
     &__time
         font-style: normal
@@ -70,8 +76,6 @@
         font-size: 12px
         line-height: 15px
         color: #939699
-        margin-bottom: 10px
-        flex-basis: 70%
     &__text
         font-style: normal
         font-weight: normal

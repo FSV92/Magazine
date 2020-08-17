@@ -98,5 +98,4 @@ $(document).ready(function () {
     $(this).addClass("comments__load-button--hidden");
     commentHidden.removeClass("comments__comment--hidden");
   });
-  console.log(commentHidden);
 });
