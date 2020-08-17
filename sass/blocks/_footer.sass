@@ -46,6 +46,8 @@
             background-color: #4592FF
             border-radius: 20px
             min-height: 40px
+            &:hover
+                opacity: 0.5
     & label
         color: #ff0000
         font-size: 12px
@@ -99,6 +101,8 @@
             font-size: 14px
             line-height: 20px
             color: #4B5157
+            &:hover
+                text-decoration: underline
     &__info
         display: flex
         justify-content: space-between
@@ -122,10 +126,15 @@
             letter-spacing: 0.5px
             text-transform: uppercase
             color: $dark
+            &:hover
+                text-decoration: underline
         &__socials
             width: 205px
             display: flex
             justify-content: space-between
+        &__social
+            &:hover
+                opacity: 0.5
         &__icon
             width: 40px
             height: 40px

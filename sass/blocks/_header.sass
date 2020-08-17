@@ -59,12 +59,12 @@
     &__container 
         &--top            
             display: grid
-            grid-template-columns: 11% repeat(10, 1fr) 11%
+            grid-template-columns: 10% repeat(10, 1fr) 12%
             align-items: center
             border-bottom: 1px solid #D9DADB
         &--bottom           
             display: grid
-            grid-template-columns: 11% repeat(10, 1fr) 11%
+            grid-template-columns: 10% repeat(10, 1fr) 12%
             align-items: center
         &--nav
             display: flex
@@ -104,10 +104,13 @@
             flex-direction: column
             justify-content: space-between
             margin-right: 15px
+            padding-left: 0
             outline: none
             border: none
             background-color: transparent
             z-index: 10
+            &:hover
+                background-color: $grey
         &__search
             padding: 15px 0 15px 25px
             grid-column: 2
@@ -129,8 +132,10 @@
         &__subscribe
             grid-column: 12 / 13
             text-decoration: none
+            &:hover
+                text-decoration: underline
     &-bottom
-        margin-top: 44px
+        margin-top: 26px
         &__freedom
             max-width: 100%
             justify-self: end
@@ -163,6 +168,8 @@
         &__link
             color: $white
             text-decoration: none
+            &:hover
+                text-decoration: underline
 .button
     &__line
         background-color: #BCBFC2
@@ -191,6 +198,8 @@
     align-items: center    
     text-decoration: none
     color: #4B5157
+    &:hover
+        text-decoration: underline
 .logo
     &__image
         width: 100%
