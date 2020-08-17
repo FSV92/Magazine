@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  // Выпадающие меню
+  var sectionsButton = $(".header-top__button");
+  var dropdown = $(".header__dropdown");
+  var mobile = $(".header__mobile");
+
+  sectionsButton.on("click", function (evt) {
+    if ($(window).width() < 769) {
+      mobile.toggleClass("header__mobile--visible");
+      $("body").toggleClass("lock-scroll");
+      dropdown.removeClass("header__dropdown--visible");
+    } else {
+      dropdown.toggleClass("header__dropdown--visible");
+    }
+  });
+
   // Табы
   var listItem = $(".list__item");
   var contentItem = $(".content__item");

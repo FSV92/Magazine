@@ -5,6 +5,9 @@
         &-top
             &__button
                 padding: 0
+        &__container
+            &--bottom
+                grid-template-columns: 11% repeat(10, 1fr) 12%
     .compilation
         padding: 18px
         &__item
@@ -168,18 +171,22 @@
     .header
         font-size: 12px
         line-height: 15px
+        &-top
+            &__button
+                margin-right: 10px
+            &__sections
+                &-text
+                    font-size: 12px
+                    line-height: 15px
         &-bottom
             &__text
                 grid-column: 2 / 5
             &__logo
                 width: 150px
                 grid-column: 6 / 8
-    .button
-        &__lines
-            margin-right: 10px
-        &__sections
-            font-size: 12px
-            line-height: 15px
+        &__container
+            &--bottom
+                grid-template-columns: 11% repeat(10, 1fr) 15%
     .compilation
         flex-wrap: wrap
         &__item
@@ -398,7 +405,13 @@
     .header
         font-size: 11px
         line-height: 14px
+        &__container
+            &--bottom
+                grid-template-columns: 11% repeat(10, 1fr) 11%
         &-top
+            &__sections
+                &-text
+                    display: none
             &__stories
                 display: none
         &-bottom
@@ -605,6 +618,9 @@
             max-width: 90%
 @media (max-width: 576px)
     .header
+        &-top
+            &__man
+                margin-right: 5px
         &-bottom
             padding: 10px 0
             &__freedom
@@ -615,9 +631,14 @@
                 grid-row: 1
                 grid-column: 1 / 4
             &__logo
-                grid-column: 4 / 8
+                grid-column: 5 / 8
+            &__sun
+                margin-right: 5px
         &-subscribe
             display: none
+        &-mobile
+            &__list
+                align-items: center
     .compilation
         &__text
             font-size: 14px

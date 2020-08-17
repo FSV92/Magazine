@@ -1,9 +1,55 @@
 .header
+    position: relative
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 20px
     padding-top: 7px
+    &__mobile
+        width: 20%
+        display: none
+        background-color: $dark
+        top: 51px
+        &--visible
+            display: block
+            position: fixed
+            width: 100%
+            height: 100%
+            z-index: 10
+    &-mobile
+        &__list
+            padding-left: 0
+            margin-top: 0
+            margin-bottom: 0
+            text-transform: uppercase
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            list-style: none
+            height: 100%
+        &__item
+            padding: 15px 0
+    &__dropdown
+        width: 20%
+        display: none
+        background-color: $dark
+        top: 51px
+        &--visible
+            display: block
+            position: fixed
+            z-index: 10
+    &-dropdown
+        &__list
+            padding-left: 30px
+            margin-top: 0
+            margin-bottom: 0
+            text-transform: uppercase
+            display: flex
+            flex-direction: column
+            list-style: none
+        &__item
+            padding: 15px 0
+        &__link
     &__fixed
         top: 0
         width: 100%
@@ -34,12 +80,30 @@
             font-weight: normal
             color: #939699
     &-top
-        &__button            
+        &__sections            
             display: flex
             align-items: center
             padding: 15px 25px 15px 0
             background-color: $white
             border: none
+            &-text
+                font-style: normal
+                font-weight: bold
+                font-size: 14px
+                line-height: 20px
+                color: $dark
+                z-index: 10
+        &__button
+            width: 18px
+            height: 14px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin-right: 15px
+            outline: none
+            border: none
+            background-color: transparent
+            z-index: 10
         &__search
             padding: 15px 0 15px 25px
             grid-column: 2
@@ -48,6 +112,8 @@
             align-items: center
             margin-right: auto
             color: #939699
+        &__man
+            margin-right: 11px
         &__stories
             width: 66px
             height: 44px
@@ -94,15 +160,6 @@
             color: $white
             text-decoration: none
 .button
-    &__lines
-        width: 18px
-        height: 14px
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        margin-right: 15px
-        outline: none
-        border: none
     &__line
         background-color: #BCBFC2
         &--long
@@ -130,10 +187,7 @@
     align-items: center    
     text-decoration: none
     color: #4B5157
-    &__man
-        margin-right: 11px
 .logo
     &__image
         width: 100%
         height: 100%
-
