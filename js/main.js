@@ -83,7 +83,7 @@ $(document).ready(function () {
           required: "Email required",
           email: "Format 'name@domain.com'",
         },
-        phone: {
+        message: {
           required: "Required",
           minlength: "Minimum of 100 numbers",
         },

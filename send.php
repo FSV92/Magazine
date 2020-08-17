@@ -16,8 +16,10 @@ if(empty($email)){
 $title = "Новый комментарий";
 $body = "
 <h2>Новый комментарий</h2>
-<b>Комментарий:</b> $comment<br>
+<b>Комментарий:</b> $message<br>
 ";
+// Отображение результата
+header('Location: comment.html');
 } else {   
 // Формирование самого письма
 $title = "Новое обращение Magazine";

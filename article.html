@@ -990,10 +990,10 @@
           <svg class="comments-my__select">
             <use xlink:href="img/sprite.svg#select"></use>
           </svg>
-          <form action="send.php" class="comments-my__form">
+          <form action="send.php" method="POST" class="form comments-my__form">
             <textarea
               class="comments-my__message"
-              name="comment"
+              name="message"
               minlength="100"
               required
             ></textarea>
