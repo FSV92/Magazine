@@ -44,6 +44,8 @@
         display: flex
         &--under
             padding-left: 85px
+        &--hidden
+            display: none
     &__avatar
         width: 75px
         height: 75px
@@ -123,6 +125,8 @@
             border-radius: 25px
             background-color: transparent
             margin-bottom: 60px
+            &--hidden
+                display: none
         &-icon
             width: 15px
             height: 15px
@@ -147,6 +151,12 @@
             height: 75px
             margin-right: 10px
             border-radius: 50%
+        &__select
+            width: 11px
+            height: 18px
+            fill: $white
+            margin-top: 28px
+            stroke: #D9DADB
         &__form
             flex-grow: 1
         &__message
@@ -154,8 +164,13 @@
             height: 130px
             margin-bottom: 15px
             border: 1px solid #D9DADB
-            border-radius: 10px
+            border-radius: 5px
             resize: none
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+            padding: 5px 10px
         &__button
             background-color: #4592FF
             padding: 10px 20px 10px 25px
@@ -166,7 +181,7 @@
             font-style: normal
             font-weight: bold
             font-size: 14px
-            line-height: 16px
+            line-height: 21px
             margin-right: 6px
             color: $white
         &__arrow

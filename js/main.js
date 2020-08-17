@@ -42,7 +42,7 @@ $(document).ready(function () {
   var flag = $(".articles-categories__flag");
   flag.on("click", function (evt) {
     $(this).toggleClass("articles-categories__flag--select");
-  })
+  });
 
   // Слайдеры
   var usefulSlider = new Swiper('.useful-swiper', {
@@ -83,7 +83,20 @@ $(document).ready(function () {
           required: "Email required",
           email: "Format 'name@domain.com'",
         },
+        phone: {
+          required: "Required",
+          minlength: "Minimum of 100 numbers",
+        },
       },
     });
   });
+
+  // Показать комментарии
+  var loadButton = $(".comments__load-button");
+  var commentHidden = $(".comments__comment--hidden")
+  loadButton.on("click", function (evt) {
+    $(this).addClass("comments__load-button--hidden");
+    commentHidden.removeClass("comments__comment--hidden");
+  });
+  console.log(commentHidden);
 });
