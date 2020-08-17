@@ -1041,9 +1041,19 @@
             alt="Avatar: me"
             class="comments-my__avatar"
           />
-          <svg class="comments-my__select">
-            <use xlink:href="img/sprite.svg#select"></use>
-          </svg>
+          <div class="comments-my__select">
+            <svg
+              class="comments-my__select-icon comments-my__select-icon--main"
+            >
+              <use xlink:href="img/sprite.svg#select"></use>
+            </svg>
+            <svg
+              class="comments-my__select-icon comments-my__select-icon--additional"
+            >
+              <use xlink:href="img/sprite.svg#select"></use>
+            </svg>
+          </div>
+          <!-- /.comments-my__select -->
           <form action="send.php" method="POST" class="form comments-my__form">
             <textarea
               class="comments-my__message"

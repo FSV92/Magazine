@@ -149,20 +149,30 @@
     &-my
         &__title
             width: 100%
-            margin-left: 100px
+            margin-left: 96px
         &__avatar
             width: 75px
             height: 75px
             margin-right: 10px
             border-radius: 50%
         &__select
-            width: 11px
-            height: 18px
-            fill: $white
             margin-top: 28px
-            stroke: #D9DADB
+            margin-right: -1px
+            position: relative
+            z-index: 1
+            &-icon
+                width: 11px
+                height: 18px
+                fill: $white
+                &--main
+                    stroke: #D9DADB
+                &--additional
+                    width: 13px
+                    position: absolute
+                    left: 1px
         &__form
             flex-grow: 1
+            position: relative
         &__message
             width: 100%
             height: 130px
@@ -175,6 +185,12 @@
             font-size: 14px
             line-height: 18px
             padding: 5px 10px
+        & label
+            color: #ff0000
+            font-size: 12px
+            position: absolute
+            bottom: 44px
+            left: 0
         &__button
             background-color: #4592FF
             padding: 10px 20px 10px 25px
@@ -191,5 +207,6 @@
         &__arrow
             width: 20px
             height: 20px
+
 
 
