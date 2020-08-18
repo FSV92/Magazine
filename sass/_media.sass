@@ -797,6 +797,7 @@
             &__title
                 margin-bottom: 50px
         &-careers
+            height: min-content
             &__title
                 width: 100%
                 text-shadow: 0 1px 0 $white
@@ -805,16 +806,20 @@
                 text-shadow: 0 1px 0 $white
             &__oval
                 right: 50%
-                transform: translateX(50%)
+                bottom: 50%
+                transform: translate(50%, 50%)
             &__image
-                right: 0
+                display: none
         &__others
             flex-wrap: wrap
-        &-other
+        &__other
             margin-right: 0
             padding-top: 15px
             padding-bottom: 20px
-            flex-basis: 48%
+            flex-basis: 100%
+            &--1
+                margin-bottom: 30px
+        &-other
             &__title
                 font-size: 16px
                 line-height: 23px
