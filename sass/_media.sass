@@ -985,6 +985,19 @@
                 display: flex
                 flex-wrap: wrap
                 flex-basis: 100%
+@media (orientation: landscape) and (max-width: 768px)            
+    .header
+        &-mobile
+            &__list
+                padding-top: 30px
+                flex-direction: row
+                flex-wrap: wrap
+            &__item
+                flex-basis: 17%
+    .recommendations        
+        &__video
+            height: 50%
+            top: -30%
         
 
         
