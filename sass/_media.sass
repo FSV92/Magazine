@@ -114,15 +114,19 @@
                 &-item
                     font-size: 12px
                     line-height: 14px
+                    max-width: 118px
             &__item
                 height: 85px
-                max-width: 113px
+                max-width: none
             &__image
                 width: 50px
             &__time
                 font-size: 11px
                 line-height: 13px
     .useful
+        &-hot
+            &__title
+                flex-basis: 100%
         &-swiper
             width: 50%
         &__careers
@@ -206,6 +210,9 @@
                 margin-bottom: 20px
             &:nth-child(3)
                 padding-right: 96px
+    .recommendations 
+        &__video
+            height: 70%
     .content
         &__item
             padding: 40px 40px 75px 40px
@@ -320,7 +327,7 @@
                     line-height: 28px
                     flex-basis: 87%
             &__time
-                margin-left: auto    
+                margin-left: auto 
     .useful
         &-swiper
             width: 100%
@@ -348,6 +355,9 @@
             &__text    
                 font-size: 14px
                 line-height: 20px
+    .comments
+        &__container
+            padding: 60px 0 100px 0
     .footer
         &-nav
             &__title
@@ -379,7 +389,7 @@
         &__author
             position: relative   
             float: right  
-            top: -45px
+            top: -90px
         &-author
             &__card
                 padding: 25px 30px
@@ -394,10 +404,12 @@
                 line-height: 14px
             &__profession
                 font-size: 10px
-                line-height: 20px
-        &-theme
-            position: relative
-            float: right            
+                line-height: 20px   
+        &__theme
+            top: 0
+            float: right    
+            position: relative   
+        &-theme     
             border: 1px solid #D9DADB
             border-radius: 10px
             padding: 10px
@@ -448,6 +460,7 @@
             max-height: 400px
             border-radius: 10px 10px 0 0
         &__video
+            height: 71%
             width: 100%
         &__list
             margin-top: 0
@@ -581,7 +594,7 @@
                 &--1
                     &:first-letter
                         font-size: 60px
-                        line-height: 80px
+                        line-height: 35px
             &__title
                 font-size: 24px
         &-author
@@ -661,6 +674,9 @@
             &:nth-child(3)
                 padding-right: 0
                 margin-bottom: 20px
+    .recommendations        
+        &__video
+            height: 50%
     .content
         &__author
             margin-bottom: 50px
@@ -781,13 +797,15 @@
         &-careers
             &__title
                 width: 100%
+                text-shadow: 0 1px 0 $white
             &__text
                 width: 100%
+                text-shadow: 0 1px 0 $white
             &__oval
                 right: 50%
                 transform: translateX(50%)
             &__image
-                display: none
+                right: 0
         &__others
             flex-wrap: wrap
         &-other
@@ -858,8 +876,10 @@
             margin-left: auto
             margin-right: auto
     .article
+        padding-top: 0
         &__author
             width: 100%
+            top: -35px
         &-author
             &__card
                 width: 100%
@@ -899,6 +919,7 @@
         &__tag
             margin-bottom: 10px
         &-support
+            padding-bottom: 60px
             justify-content: center
             &__link
                 margin-bottom: 10px

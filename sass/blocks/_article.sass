@@ -1,11 +1,11 @@
 .article
+    padding-top: 60px
     &__container
         position: relative
     &__author
         position: absolute
         right: 0
-        top: -100px
-        width: 263px
+        top: -160px
         border: 1px solid #D9DADB
         border-radius: 10px
         display: flex
@@ -18,7 +18,7 @@
             flex-direction: column
             justify-content: space-between
             align-items: center
-            padding: 35px 40px
+            padding: 35px 55px
             border-bottom: 1px solid #D9DADB
         &__avatar
             border-radius: 50%
@@ -37,7 +37,7 @@
             font-size: 14px
             line-height: 20px
             color: #4B5157
-            margin: 15px
+            margin: 0 0 15px 0
         &__articles
             font-family: Lato
             font-style: normal
@@ -54,8 +54,10 @@
             width: 40px
             height: 40px
             fill: $white
+            &:hover
+                opacity: 0.8
         &__follow
-            padding: 13px 0
+            padding: 11px 0
             font-style: normal
             font-weight: bold
             font-size: 14px
@@ -65,7 +67,7 @@
             &:hover
                 opacity: 0.5
     &__text
-        max-width: 612px
+        max-width: 625px
     &-text
         &__paragraph
             font-style: normal
@@ -74,17 +76,18 @@
             line-height: 30px
             color: #4B5157
             margin-bottom: 30px
+            margin-top: 0
+            letter-spacing: 0.08px
             &--1
                 &:first-letter
                     float: left
-                    float: bottom
                     font-style: normal
                     font-weight: bold
                     font-size: 100px
-                    line-height: 105px
+                    line-height: 70px
                     color: #4592FF
-                    margin-top: 12px
                     margin-right: 10px
+                    margin-top: 10px
         &__title
             margin-top: 45px
             margin-bottom: 30px
@@ -96,6 +99,9 @@
             color: $dark
     &-swiper
         position: relative
+    &__slider
+        margin-top: 60px
+        margin-bottom: 45px
     &-slider
         &__slide
             display: flex
@@ -121,7 +127,7 @@
             padding-left: 35px
             padding-right: 35px
         &__author
-            padding: 12px 35px 12px 30px
+            padding: 12px 55px 12px 30px
             height: 100%
             display: flex
             align-items: 
@@ -170,8 +176,8 @@
                 height: 60px
     &__saying
         position: relative
-        margin-top: 50px
-        margin-bottom: 30px
+        margin-top: 85px
+        margin-bottom: 40px
         display: flex
     &-saying        
         &__quote
@@ -182,7 +188,7 @@
             height: 70px
             z-index: -1
         &__text
-            max-width: 453px
+            max-width: 466px
             font-family: Roboto Slab
             font-style: normal
             font-weight: bold
@@ -213,12 +219,12 @@
             line-height: 20px
             color: #939699
     &__tags
-        padding-top: 15px
-        padding-bottom: 60px
+        padding-top: 22px
+        padding-bottom: 64px
         width: 100%
         border-bottom: 1px solid #D9DADB
     &__tag
-        padding: 5px 15px
+        padding: 5px 13px
         border: 1px solid #D9DADB
         border-radius: 5px
         font-style: normal
@@ -228,7 +234,7 @@
         color: $dark
         margin-right: 10px
     &__support
-        padding: 30px 0
+        padding: 30px 0 90px 0
         display: flex
         justify-content: flex-start
         flex-wrap: wrap
@@ -241,7 +247,7 @@
             line-height: 30px
             flex-basis: 100%
             margin-top: 0
-            margin-bottom: 25px
+            margin-bottom: 22px
         &__link            
             padding: 10px 25px 10px 20px
             border-radius: 20px
@@ -292,7 +298,7 @@
     &__theme
         position: absolute
         right: 0
-        top: 0
+        top: 135px
         max-width: 263px
         display: flex
         flex-direction: column
@@ -320,6 +326,7 @@
             color: $dark
             margin-bottom: 5px
             margin-top: 0
+            width: 250px
         &__text
             font-style: normal
             font-weight: normal
@@ -333,6 +340,9 @@
             display: flex
             align-items: center
             margin-right: 10px
+            cursor: pointer
+            &:hover
+                opacity: 0.8
             &-icon
                 width: 15px
                 height: 15px
@@ -347,6 +357,9 @@
         &__comments
             display: flex
             align-items: center
+            cursor: pointer
+            &:hover
+                opacity: 0.8
             &-icon
                 width: 15px
                 height: 15px

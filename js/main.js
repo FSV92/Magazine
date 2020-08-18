@@ -99,7 +99,7 @@ $(document).ready(function () {
           email: "Format 'name@domain.com'",
         },
         message: {
-          required: "Required",
+          required: "Must not be empty",
           minlength: "Minimum of 100 numbers",
         },
       },

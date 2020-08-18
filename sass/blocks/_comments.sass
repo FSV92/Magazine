@@ -1,6 +1,6 @@
 .comments
     &__container
-        padding: 90px 0 30px 0
+        padding: 90px 200px 30px 0
     &__head
         padding-bottom: 30px
         display: flex
@@ -42,7 +42,7 @@
             opacity: 0.5
     &__comment
         border-top: 1px solid #D9DADB
-        padding: 20px 0 29px 0
+        padding: 25px 0 29px 0
         display: flex
         &--under
             padding-left: 85px
@@ -95,6 +95,9 @@
             width: 15px
             height: 15px            
             fill: #BCBFC2
+            cursor: pointer
+            &:hover
+                opacity: 0.8
             &--reply
                 margin-right: 5px
             &--thumb-up
@@ -103,6 +106,9 @@
             display: flex
             align-items: center
             margin-right: 10px
+            cursor: pointer
+            &:hover
+                opacity: 0.8
         &__text
             font-style: normal
             font-weight: bold
@@ -153,7 +159,13 @@
     &-my
         &__title
             width: 100%
-            margin-left: 96px
+            margin: 0 0 17px 96px
+            font-family: Roboto Slab
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 25px
+            color: $dark
         &__avatar
             width: 75px
             height: 75px
@@ -189,6 +201,7 @@
             font-size: 14px
             line-height: 18px
             padding: 5px 10px
+            outline: none
         & label
             color: #ff0000
             font-size: 12px
