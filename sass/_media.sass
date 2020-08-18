@@ -390,6 +390,7 @@
             position: relative   
             float: right  
             top: -90px
+            margin-left: 15px
         &-author
             &__card
                 padding: 25px 30px
@@ -409,6 +410,7 @@
             top: 0
             float: right    
             position: relative   
+            margin-left: 15px
         &-theme     
             border: 1px solid #D9DADB
             border-radius: 10px
@@ -426,6 +428,8 @@
         &__container
             &--bottom
                 grid-template-columns: 11% repeat(10, 1fr) 11%
+            &--nav
+                display: none
         &-top
             &__sections
                 &-text
@@ -440,8 +444,6 @@
             &__date
                 grid-column: 11 / 13
                 max-width: 90px
-        &__nav
-            display: none
     .compilation
         &__text
             font-size: 12px
@@ -880,6 +882,7 @@
         &__author
             width: 100%
             top: -35px
+            margin-left: 0px
         &-author
             &__card
                 width: 100%
@@ -895,10 +898,13 @@
                 padding-left: 20px
             &__button
                 display: none
+            &__image
+                height: 400px
         &__theme
             max-width: 100%
             margin: 0
             margin-bottom: 30px
+            margin-left: 0
         &-saying
             flex-wrap: wrap
             &__author
@@ -926,11 +932,18 @@
                 flex-basis: 100%
                 justify-content: center
     .more-articles
+        &__container
+            padding-bottom: 30px
         &__item
             max-width: 100%
             &-wrapper
                 flex-basis: 100%
     .comments
+        &__my
+            padding-left: 25px
+            padding-right: 25px
+        &__container
+            padding-top: 30px
         &__head
             flex-wrap: wrap
         &__title
