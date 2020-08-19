@@ -81,7 +81,8 @@
                 &--45
                     margin-bottom: 5px
             &__info
-                flex-basis: 100%   
+                flex-basis: 140px
+                margin-left: 10px 
         &__item            
             &--1                
                 padding-top: 30px
@@ -998,20 +999,7 @@
                 display: flex
                 flex-wrap: wrap
                 flex-basis: 100%
-@media (orientation: landscape) and (max-width: 768px)   
-    .fancybox-slide--iframe .fancybox-content 
-        width: 80%
-        height: 80%
-        margin: 0         
-    .header
-        &-mobile
-            &__list
-                padding-top: 30px
-                flex-direction: row
-                flex-wrap: wrap
-            &__item
-                flex-basis: 17%
-@media (min-width: 769px)
+@media (min-width: 769px) and (orientation:portrait)
     .header
         &-top
             &__button
@@ -1156,4 +1144,17 @@
             &__social
                 &:hover
                     opacity: 0.5
+@media (orientation: landscape) and (max-height: 576px)   
+    .fancybox-slide--iframe .fancybox-content 
+        width: 80%
+        height: 80%
+        margin: 0         
+    .header
+        &-mobile
+            &__list
+                padding-top: 30px
+                flex-direction: row
+                flex-wrap: wrap
+            &__item
+                flex-basis: 17%
 

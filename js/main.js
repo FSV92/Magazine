@@ -5,7 +5,11 @@ $(document).ready(function () {
   var mobile = $(".header__mobile");
 
   sectionsButton.on("click", function (evt) {
-    if ($(window).width() < 769) {
+    if ($(window).height() < $(window).width()) {
+      mobile.toggleClass("header__mobile--visible");
+      $("body").toggleClass("lock-scroll");
+      dropdown.removeClass("header__dropdown--visible");
+    } else if (($(window).width() < 769)) {
       mobile.toggleClass("header__mobile--visible");
       $("body").toggleClass("lock-scroll");
       dropdown.removeClass("header__dropdown--visible");
@@ -54,9 +58,9 @@ $(document).ready(function () {
   });
 
   // Флажок
-  var flag = $(".articles-categories__flag");
+  var flag = $(".flag");
   flag.on("click", function (evt) {
-    $(this).toggleClass("articles-categories__flag--select");
+    $(this).toggleClass("flag-select");
   });
 
   // Слайдеры
