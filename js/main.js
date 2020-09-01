@@ -68,7 +68,7 @@ $(document).ready(function () {
     // Optional parameters
     loop: true,
     autoplay: {
-      delay: 1500,
+      delay: 3000,
     },
     // If we need pagination
     pagination: {
